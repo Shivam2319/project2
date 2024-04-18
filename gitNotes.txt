@@ -1,0 +1,57 @@
+how to check git version?
+git -v
+
+# check folder or files names
+ls
+
+how to initialize any folder
+git init
+
+
+how to see hidden folder in git
+ls -la (use this command only in git bash terminal)
+
+how to add file on git
+git add index.html(index.html is file name)
+
+
+
+how to configure account on git?
+git config --global user.email "skshiv197@gmail.com"
+git config --global user.name "Shivam Kumar"
+
+
+
+how to write messages on every changes
+git commit -m "messages to commit"
+
+
+ 
+ 
+ git config --global core.editor "code --wait"
+ The command `git config --global core.editor "code --wait"` is used to configure the default text editor for Git. In this case, it sets Visual Studio Code (assuming it is installed and added to the system's PATH) as the default editor.
+
+Let's break down the command:-
+- `git config`: This is a Git command used for configuring various settings.
+- `--global`: This flag specifies that the configuration should be applied globally, affecting all repositories on your system.
+- `core.editor`: This is a key within Git's configuration file responsible for specifying the default text editor.
+- `"code --wait"`: The value assigned to `core.editor` represents the command that will be executed when you want to edit a commit message or perform other editing tasks in Git. In this case, it sets Visual Studio Code as the editor and uses the `--wait` option, which tells Git to wait until you close Visual Studio Code before continuing with further operations.
+By executing this command, any time you need to edit a commit message or perform similar actions that require an interactive text editor in Git, Visual Studio Code will be launched with appropriate context.
+
+
+
+
+touch .gitignore
+The command `touch .gitignore` is used to create a new file named ".gitignore" in the current directory. 
+
+Here's an explanation of each part of the command:
+
+- `touch`: This is a command-line utility in Unix-like operating systems, including macOS and Linux. It is used to update the modification timestamp of a file or, if the file does not exist, create a new empty file.
+- `.gitignore`: This is the name of the file being created. In Git, a ".gitignore" file is used to specify files and directories that should be ignored by Git when tracking changes.
+
+By running this command, you can create an initial ".gitignore" file in your repository or project directory. You can then edit this file using a text editor (such as Visual Studio Code or nano) and add specific files or patterns that you want Git to ignore when tracking changes.
+
+in .gitignore file we add files which we dont want to publish. 
+
+
+git add. commands help us to push all the file module except module which written under gitignore file
